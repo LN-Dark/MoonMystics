@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Moon Mystics</string>
+    <string name="title_home">Remote View</string>
+    <string name="title_dashboard">Upa-Yoga</string>
+    <string name="title_notifications">INFO</string>
+    <string name="mostrar">Show</string>
+    <string name="tentarnovamente">Try again</string>
+    <string name="cancelar">Cancel</string>
+    <string name="doar">Donate</string>
+    <string name="obrigado">Thanks</string>
+    <string name="whatis">\?</string>
+    <string name="amor">Love</string>
+    <string name="explora_o_interior">Inner exploration</string>
+    <string name="felicidade">Joy</string>
+    <string name="paz">Peace</string>
+    <string name="bem_estar">Wellbeing</string>
+    <string name="sucesso">Success</string>
+    <string name="sa_de">Health</string>
+    <string name="document_rio_sobre_upa_yoga">Upa-Yoga Documentary</string>
+    <string name="exercicios_seguidos">Full Exercises</string>
+    <string name="samadhi">Samadhi</string>
+    <string name="sadhguru_isha_foundation">SadhGuru Isha Foundation</string>
+    <string name="flower_of_life">Flower of Life</string>
+    <string name="fibonacci">Fibonacci</string>
+    <string name="remote_view">Remote View</string>
+</resources>

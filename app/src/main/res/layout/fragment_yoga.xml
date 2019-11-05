@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_Documentario"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/document_rio_sobre_upa_yoga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_amor_what"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/whatis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_exploracaointerior_what" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_exploracaointerior_what"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/whatis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_felicidade_what" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_health"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/sa_de"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yoga_health_what"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_health_what"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/whatis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_sucesso"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/sucesso"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yoga_sucesso_what"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_health" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_bemestar"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/bem_estar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yoga_bemestar_what"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_sucesso" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_paz"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/paz"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yoga_paz_what"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_bemestar" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_felicidade"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/felicidade"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yoga_felicidade_what"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_paz" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_exploracaointerior"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/explora_o_interior"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yoga_exploracaointerior_what"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_felicidade" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_amor"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/amor"
+        app:layout_constraintEnd_toStartOf="@+id/btn_yoga_amor_what"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_exploracaointerior" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_sucesso_what"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/whatis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_health_what" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_bemestar_what"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/whatis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_sucesso_what" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_paz_what"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/whatis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_bemestar_what" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_felicidade_what"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/whatis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_paz_what" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_yoga_exerciciosseguidos"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/exercicios_seguidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_exerciciosseguidos"
+        app:srcCompat="@drawable/yoga" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_Documentario" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_yoga_amor" />
+</androidx.constraintlayout.widget.ConstraintLayout>
