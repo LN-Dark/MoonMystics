@@ -3,7 +3,7 @@
     <string name="app_name">Moon Mystics</string>
     <string name="title_dashboard">Upa-Yoga</string>
     <string name="tentarnovamente">Tentar novamente</string>
-    <string name="sucesso">Sucesso</string>
+    <string name="sucesso">Meditação sentada</string>
     <string name="sa_de">Saúde</string>
     <string name="title_home">Remote View</string>
     <string name="paz">Paz</string>
@@ -24,4 +24,12 @@
     <string name="remote_view">Visão Remota</string>
     <string name="sadhguru_isha_foundation">SadhGuru Isha Foundation</string>
     <string name="samadhi">Samadhi</string>
+    <string name="meditar">Meditar</string>
+    <string name="sitting_meditation">" Meditação sentada"</string>
+    <string name="walking_meditation">Meditação andando</string>
+    <string name="what_is_meditation">" O que é meditação"</string>
+    <string name="fundamentals_of_meditation_practice">Fundamentos da Prática da Meditação</string>
+    <string name="meditation_practice_and_daily_life">Prática de Meditação e Vida Diária</string>
+    <string name="mindful_prostration">Prostração consciente</string>
+    <string name="varias_musicas_para_meditar">Várias músicas para meditar</string>
 </resources>

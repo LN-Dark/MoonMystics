@@ -23,4 +23,12 @@
     <string name="flower_of_life">Flower of Life</string>
     <string name="fibonacci">Fibonacci</string>
     <string name="remote_view">Remote View</string>
+    <string name="meditar">Meditate</string>
+    <string name="what_is_meditation">What is Meditation</string>
+    <string name="sitting_meditation">Sitting Meditation</string>
+    <string name="walking_meditation">Walking Meditation</string>
+    <string name="fundamentals_of_meditation_practice">Fundamentals of Meditation Practice</string>
+    <string name="mindful_prostration">Mindful Prostration</string>
+    <string name="meditation_practice_and_daily_life">Meditation Practice and Daily Life</string>
+    <string name="varias_musicas_para_meditar">Various songs to meditate</string>
 </resources>

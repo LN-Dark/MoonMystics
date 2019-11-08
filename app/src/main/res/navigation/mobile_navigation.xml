@@ -3,23 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/menu_remoteview">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.lua.mystics.ui.home.RemoteViewFragment"
+        android:id="@+id/menu_remoteview"
+        android:name="com.lua.mystics.ui.RemoteView.RemoteViewFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_remoteview" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.lua.mystics.ui.dashboard.YogaFragment"
+        android:id="@+id/menu_upayoga"
+        android:name="com.lua.mystics.ui.Yoga.YogaFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_yoga" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.lua.mystics.ui.notifications.InfoFragment"
+        android:id="@+id/menu_meditar"
+        android:name="com.lua.mystics.ui.Meditar.MeditarFragment"
+        android:label="@string/meditar"
+        tools:layout="@layout/fragment_meditar" />
+
+    <fragment
+        android:id="@+id/menu_info"
+        android:name="com.lua.mystics.ui.Info.InfoFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_info" />
+
 </navigation>
