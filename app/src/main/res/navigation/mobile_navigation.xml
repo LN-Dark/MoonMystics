@@ -6,10 +6,10 @@
     app:startDestination="@+id/menu_remoteview">
 
     <fragment
-        android:id="@+id/menu_remoteview"
-        android:name="com.lua.mystics.ui.RemoteView.RemoteViewFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_remoteview" />
+        android:id="@+id/menu_meditar"
+        android:name="com.lua.mystics.ui.Meditar.MeditarFragment"
+        android:label="@string/meditar"
+        tools:layout="@layout/fragment_meditar" />
 
     <fragment
         android:id="@+id/menu_upayoga"
@@ -18,10 +18,10 @@
         tools:layout="@layout/fragment_yoga" />
 
     <fragment
-        android:id="@+id/menu_meditar"
-        android:name="com.lua.mystics.ui.Meditar.MeditarFragment"
-        android:label="@string/meditar"
-        tools:layout="@layout/fragment_meditar" />
+        android:id="@+id/menu_remoteview"
+        android:name="com.lua.mystics.ui.RemoteView.RemoteViewFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_remoteview" />
 
     <fragment
         android:id="@+id/menu_info"
