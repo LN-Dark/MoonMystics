@@ -22,13 +22,13 @@ android {
         debug {
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
-            storeFile file('/home/dark/AndroidStudioProjects/moonmysticsKeystore.jks')
+            storeFile file('/home/darknesslight/AndroidStudioProjects/moonmysticsKeystore.jks')
             storePassword keystoreProperties['storePassword']
         }
         release {
             keyAlias keystoreProperties['keyAlias']
             keyPassword keystoreProperties['keyPassword']
-            storeFile file('/home/dark/AndroidStudioProjects/moonmysticsKeystore.jks')
+            storeFile file('/home/darknesslight/AndroidStudioProjects/moonmysticsKeystore.jks')
             storePassword keystoreProperties['storePassword']
         }
     }
