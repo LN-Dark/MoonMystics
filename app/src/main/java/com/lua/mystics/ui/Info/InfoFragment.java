@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.lua.mystics.R;
 
 public class InfoFragment extends Fragment {
@@ -31,7 +33,9 @@ public class InfoFragment extends Fragment {
         MaterialButton btn_floweroflife = root.findViewById(R.id.btn_flordavida_info);
         MaterialButton btn_sadhguru = root.findViewById(R.id.btn_Isha_info);
         MaterialButton btn_Samadhi = root.findViewById(R.id.btn_Samadhi_info);
-        ImageView btn_paypal = root.findViewById(R.id.img_paypal_info);
+        ImageView btn_telegram = root.findViewById(R.id.btn_telegram);
+        ImageView btn_paypal = root.findViewById(R.id.btn_paypal);
+        ImageView btn_github = root.findViewById(R.id.btn_github);
 
         btn_Samadhi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,42 +77,38 @@ public class InfoFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        btn_paypal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final AlertDialog.Builder builder3 = new AlertDialog.Builder(root.getContext());
-                LinearLayout layout = new LinearLayout(root.getContext());
-                layout.setOrientation(LinearLayout.VERTICAL);
-                builder3.setIcon(root.getContext().getDrawable(R.drawable.logo));
-                builder3.setTitle(root.getContext().getString(R.string.doar));
-                final TextView textoshare = new TextView(root.getContext());
-                textoshare.setText(root.getContext().getString(R.string.obrigado));
-                textoshare.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-                textoshare.setTextSize(15);
-                layout.addView(textoshare);
-                final TextView espaco4 = new TextView(root.getContext());
-                espaco4.setText(" ");
-                layout.addView(espaco4);
-                builder3.setCancelable(false);
-                builder3.setView(layout);
-                AlertDialog alert = builder3.create();
-                final AlertDialog finalAlert = alert;
-                builder3.setPositiveButton(root.getContext().getString(R.string.doar), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://paypal.me/pedrocruz77"));
-                        startActivity(browserIntent);
-                    }
-                });
-                builder3.setNeutralButton(root.getContext().getString(R.string.cancelar), new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finalAlert.dismiss();
-                    }
-                });
-                alert = builder3.create();
-                alert.show();
-            }
+        btn_github.setOnClickListener(v -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/LN-Dark"));
+            startActivity(browserIntent);
+        });
+        btn_telegram.setOnClickListener(v -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/LN_DarK"));
+            startActivity(browserIntent);
+        });
+        btn_paypal.setOnClickListener(v -> {
+            MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(root.getContext());
+            LinearLayout layout = new LinearLayout(root.getContext());
+            layout.setOrientation(LinearLayout.VERTICAL);
+            builder.setIcon(root.getContext().getDrawable(R.drawable.logo));
+            builder.setTitle(getString(R.string.doar));
+            layout.setGravity(Gravity.CENTER);
+            final TextView espaco4 = new TextView(root.getContext());
+            espaco4.setText(getString(R.string.obrigado));
+            espaco4.setTextSize(19);
+            espaco4.setGravity(Gravity.CENTER);
+            layout.addView(espaco4);
+            final TextView espaco2 = new TextView(root.getContext());
+            espaco2.setText("\n");
+            espaco2.setTextSize(25);
+            espaco2.setGravity(Gravity.CENTER);
+            layout.addView(espaco2);
+            builder.setView(layout);
+            builder.setPositiveButton(getString(R.string.ok), (dialog, which) -> {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://paypal.me/pedrocruz77"));
+                startActivity(browserIntent);
+            });
+            builder.setNeutralButton(getString(R.string.cancelar), (dialog, which) -> dialog.dismiss());
+            builder.show();
         });
         return root;
     }

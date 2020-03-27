@@ -7,82 +7,82 @@
     tools:context=".ui.Meditar.MeditarFragment">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_meditar_whatis"
+        android:id="@+id/btn_meditar_cursomeditacao"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="@string/what_is_meditation"
+        android:text="@string/curso_no_youtube_de_medita_ao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_meditar_sentado"
+        android:id="@+id/btn_meditar_5tiposconsciencia"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="@string/sitting_meditation"
+        android:text="@string/_5_kinds_of_conscience"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_whatis" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_cursomeditacao" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_meditar_andar"
+        android:id="@+id/btn_meditar_segredossucesso"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="@string/walking_meditation"
+        android:text="@string/secrets_of_success"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_sentado" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_5tiposconsciencia" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_meditar_fundamentos"
+        android:id="@+id/btn_meditar_osmaisimportantesprincipiosdavida"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="@string/fundamentals_of_meditation_practice"
+        android:text="@string/the_most_important_principles_of_life"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_andar" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_segredossucesso" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_meditar_prestracao"
+        android:id="@+id/btn_meditar_saude"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="@string/mindful_prostration"
+        android:text="@string/health"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_fundamentos" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_osmaisimportantesprincipiosdavida" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_meditar_diaadia"
+        android:id="@+id/btn_meditar_16pontos"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        android:text="@string/meditation_practice_and_daily_life"
+        android:text="@string/_16_points"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_prestracao" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_saude" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_meditar_Musica"
@@ -118,6 +118,6 @@
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_diaadia" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_meditar_16pontos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
