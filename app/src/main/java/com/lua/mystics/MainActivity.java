@@ -17,8 +17,6 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
-    private Menu menu;
-    private MenuItem menuItemSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navView, navController);
         navController.navigate(R.id.menu_meditar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(getDrawable(R.drawable.logo_toolbar));
+        getSupportActionBar().setIcon(getDrawable(R.drawable.moonmysticstoolbar));
     }
 
 }
